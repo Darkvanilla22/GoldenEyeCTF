@@ -149,3 +149,20 @@ After running the script, I was able to find the developments tool (CC) needed i
 
 Knowing this now, I can utilize CVE 2015-1328 (Overlayfs local root exploit) found here: (https://www.exploit-db.com/exploits/37292).
 
+In order for this exploit to work properly, we should navigate to the "/tmp" directory and place our uncompiled C file there. Also, we need to examine the code itself to make sure it will work under the right circumstances within the target enviornment. This means we need to switch "gcc" to "cc":
+
+![image](https://user-images.githubusercontent.com/53369798/111056104-7b89b200-844a-11eb-820d-359b05854975.png)
+
+And now to compile the code, execute the binary, and become root!!!
+
+![image](https://user-images.githubusercontent.com/53369798/111056164-fb178100-844a-11eb-9fca-e997b3cad8e9.png)
+
+Now that we're root, let's go and find that flag:
+
+![image](https://user-images.githubusercontent.com/53369798/111056232-7711c900-844b-11eb-8973-02d71af9e763.png)
+
+Flag has been captured, and it looks like there is one more thing I should check out:
+
+![image](https://user-images.githubusercontent.com/53369798/111056263-9dcfff80-844b-11eb-82ab-253527a83aef.png)
+
+And that's the end! Overall, I really enjoyed this room. I actually learned a good amount of stuff from this, as well as appreciating how long this CTF was. A great medium-level room indeed!
