@@ -5,6 +5,8 @@ In this James Bond-themed guided CTF, we will walkthrough the process of gaining
 
 First things first, as we don't have any prior information given to us about this machine beside the machine's IP, we can start off by conducting an Nmap scan to discover any open ports that may be of use to us:
 
+![image](https://user-images.githubusercontent.com/53369798/111056399-b260c780-844c-11eb-876a-715ab244a84e.png)
+
 ![image](https://user-images.githubusercontent.com/53369798/111050929-84b05a00-841d-11eb-9629-0557b70a4b46.png)
 
 There are four open ports: 25, 80, 55006, and 55007
